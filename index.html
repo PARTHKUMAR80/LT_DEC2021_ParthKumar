@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LueurTech</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&    family=Source+Sans+3:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+    <!-- header section -->
+
+    <header>
+        <div class="div-1">
+            <img class="pop" src="/images/logo.png" alt="">
+        </div>
+        <div class="div-2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="hamburger" id="hmbrgr" onclick="openToggle()">
+            <img src="/images/hamburger.png" alt="">
+        </div>
+    </header>
+
+    <div class="toggle-div" id="tgl-div">
+        <div><a href="#">Home</a></div>
+        <div><a href="#">About Us</a></div>
+        <div><a href="#">Pictures</a></div>
+        <div><a href="#">Contact Us</a></div>
+    </div>
+
+    <!-- about us section -->
+
+    <section class="about-us-sec">
+        <h1>About Us</h1>
+        <div class="about-us-sec-div1">
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa cum dolor voluptates officia nostrum nisi veniam quam exercitationem eum earum recusandae ex hic consectetur, nam, dolorem, illo harum voluptatibus magni!</div>
+            <div>
+                <img class="pop" src="/images/img1.jpg" alt="">
+                <img class="pop" src="/images/img2.jfif" alt="">
+                <img class="pop" src="/images/img3.jfif" alt="">
+                <img class="pop" src="/images/img4.jfif" alt="">
+                <img class="pop" src="/images/img5.jfif" alt="">
+                <img class="pop" src="/images/img6.jfif" alt="">
+                <img class="pop" src="/images/img7.jfif" alt="">
+                <img class="pop" src="/images/img8.jpg" alt="">
+            </div>
+        </div>
+        <div class="about-us-sec-div2">
+            <button id="btn-1">Button</button>
+            <button id="btn-2">Button</button>
+            <button id="btn-3">Button</button>
+            <button id="btn-4">Button</button>
+        </div>
+        <div id="hide-show"></div>
+    </section>
+
+    <!-- pricing section -->
+
+    <section class="pricing-sec">
+        <div class="card" id="card1">
+            <div class="image-div"><img class="pop" src="/images/prod1.jpg" alt=""></div>            
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus provident, quas officia in liber.</p>
+            <div class="btn-div">
+                <button>lorem</button>
+                <button>lorem</button>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <div class="image-div"><img class="pop" src="/images/prod2.jpg" alt=""></div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus provident, quas officia in liber.</p>
+            <div class="btn-div">
+                <button>lorem</button>
+                <button>lorem</button>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <div class="image-div"><img class="pop" src="/images/prod3.jfif" alt=""></div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus provident, quas officia in liber.</p>
+            <div class="btn-div">
+                <button>lorem</button>
+                <button>lorem</button>
+            </div>
+        </div>
+        <div class="card" id="card4">
+            <div class="image-div"><img class="pop" src="/images/prod4.jpg" alt=""></div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus provident, quas officia in liber.</p>
+            <div class="btn-div">
+                <button>lorem</button>
+                <button>lorem</button>
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <div class="image-div"><img class="pop" src="/images/prod5.jfif" alt=""></div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <p>Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem necessitatibus provident, quas officia in liber.</p>
+            <div class="btn-div">
+                <button>lorem</button>
+                <button>lorem</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us section -->
+
+    <section class="contact-sec">
+        <div class="contact-sec-div-1">
+            <h1>Contact</h1>
+            <h2>Us</h2>
+        </div>
+        <form action="#" onsubmit="return validation()">
+            <input type="text" placeholder="name..." id="name">
+            <span id="name-span"></span>
+            <input type="email" placeholder="email..." id="email">
+            <span id="email-span"></span>
+            <input type="number" placeholder="phone..." id="phone">
+            <span id="phone-span"></span>
+            <input type="text" placeholder="subject..." id="subject">
+            <span id="subject-span"></span>
+            <textarea id="txtarea" cols="10" rows="5" placeholder="message..."></textarea>
+            <span id="txtarea-span"></span>
+            <button>SEND</button>
+        </form>
+    </section>
+
+    <!-- newspaper signup section -->
+
+    <section class="newspaper-sec">
+        <div class="news-box">
+            <div><img class="pop" src="/images/news.jfif" alt=""></div>
+            <div>Subscribe</div>
+            <div>Subscribe to our newsletter & stay updated</div>
+            <div>
+                <input type="email" id="subscribe-input" placeholder="Your email">
+                <button id="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footet section -->
+
+    <footer>
+        <div>
+            <h1>About Us</h1>
+            <p>Shop</p>
+            <p>DMCA</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+        </div>
+        <div>
+            <h1>Visit</h1>
+            <p>Ride</p>
+            <p>Drive</p>
+            <p>Blog</p>
+            <p>Careers</p>
+        </div>
+        <div>
+            <h1>Folow</h1>
+            <p><span><a href=""><img class="pop" src="/images/insta-logo.jpg" alt=""></a></span></p>
+            <p><span><a href=""><img class="pop" src="/images/facebook-logo.png" alt=""></a></span></p>
+            <p><span><a href=""><img class="pop" src="/images/youtube-logo.png" alt=""></a></span></p>
+            <p><span><a href=""><img class="pop" src="/images/twitter-logo.png" alt=""></a></span></p>
+        </div>
+        <div>
+            <h1>Legal</h1>
+            <p>Terms</p>
+            <p>Privacy</p>
+            <p>Safety</p>
+            <p>All</p>
+        </div>
+    </footer>
+
+</body>
+</html>
